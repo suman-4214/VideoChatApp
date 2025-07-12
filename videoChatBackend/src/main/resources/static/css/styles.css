@@ -1,0 +1,137 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.app-heading {
+    width: 100%;
+    text-align: center;
+    background-color: #4b2e83;
+    color: white;
+    padding: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.social-icons, .login-form {
+    flex: 1 1 300px;
+    padding: 30px;
+}
+
+.social-icons {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.social-icons a {
+    color: #4b2e83;
+    font-size: 24px;
+    margin: 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #764ba2;
+    transform: scale(1.2);
+}
+
+.login-form {
+    background-color: white;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.login-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #764ba2;
+}
+
+.login-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #764ba2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #5b2c91;
+}
+
+.login-form p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-form a {
+    color: #764ba2;
+    text-decoration: none;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .app-heading {
+        font-size: 24px;
+    }
+}
